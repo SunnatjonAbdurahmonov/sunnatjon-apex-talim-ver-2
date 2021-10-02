@@ -8,29 +8,8 @@
   font-family: Montserrat, "sans-serif";
 }
 
-.container .bg-row {
-  width: 100%;
-  height: 693px;
-  position: absolute;
-  z-index: -1;
-  background-color: #00445b;
-  filter: contrast(1.8);
-}
-.container .bg-row::before {
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 693px;
-  opacity: 0.2;
-  z-index: -1;
-  background-image: url(../images/bg-img.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: multiply;
-  z-index: -2;
+.container {
+  background: linear-gradient(124.06deg, #ecfefa 9.47%, #bee9ff 29.35%, #dbeaff 60.79%, #f3dbff 85.49%);
 }
 .container .main-row {
   width: 100%;
@@ -45,7 +24,7 @@
   flex-wrap: wrap;
 }
 .container .main-row .navbar .logo {
-  color: #fff;
+  color: #000;
   display: flex;
   align-items: center;
 }
