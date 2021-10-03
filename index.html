@@ -17,52 +17,70 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
+    />
   </head>
   <body>
     <div class="container">
-      <div class="bg-row"></div>
+      <nav class="navbar">
+        <a href="#" class="logo">
+          <img
+            src="images/black-logo.png"
+            alt="white-logo"
+            width="100"
+            height="100"
+          />
+          <span class="logo-title">apex ta’lim</span>
+        </a>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link">yangiliklar</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">kurslar</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">ustozlar</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">fotolavhalar</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">videolavhalar</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">natijalar</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">izohlar</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">aloqa</a>
+          </li>
+        </ul>
+      </nav>
       <div class="main-row">
-        <nav class="navbar">
-          <a href="#" class="logo">
-            <img src="images/black-logo.png" alt="white-logo" />
-            <span class="logo-title">apex ta’lim</span>
-          </a>
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="#" class="nav-link">yangiliklar</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">kurslar</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">ustozlar</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">fotolavhalar</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">videolavhalar</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">natijalar</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">izohlar</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">aloqa</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="text-row">
-          <h1 class="text-row-title">
-            Talaba bo‘lishingizga albatta ishonamiz
-          </h1>
-          <p class="text-row-description">
-            Shaxmatda yo’lga chiqqan piyoda, bir kun kelib albatta vazir
-            bo’ladi.
-          </p>
-          <a href="#" class="text-row-link">kursga yozilish</a>
+        <div class="main-text">
+          <div class="text-col">
+            <h1 class="text-row-title">
+              Talaba bo‘lishingizga albatta ishonamiz
+            </h1>
+            <p class="text-row-description">
+              Shaxmatda yo’lga chiqqan piyoda, bir kun kelib albatta vazir
+              bo’ladi.
+            </p>
+            <a href="#" class="text-row-link">kursga yozilish</a>
+          </div>
+          <div class="text-col">
+            <img
+              src="images/main-user.png"
+              alt="main-user"
+              width="407"
+              height="578"
+            />
+          </div>
         </div>
       </div>
 
@@ -174,18 +192,23 @@
           <div class="center">
             <div class="wrapper">
               <div class="inner2">
-                <div class="card shadow-card">
-                  <img src="images/course-1.png" />
+                <div class="card shadow-card course-card">
+                  <img
+                    src="images/course-1.png"
+                    alt="course-1"
+                    width="369"
+                    height="178"
+                  />
                   <div class="slide-card-text padding-card">
                     <a href="#" class="slide-card-title"> Matematika </a>
                     <p class="slide-card-desc">
                       Matematika fanini mukammal o‘rganish yangi metodikasi
                       bilan o‘rganamiz.
                     </p>
-                    <a href="#" class="yellow-btn">kursga yozilish</a>
+                    <a href="#" class="dark-btn">kursga yozilish</a>
                   </div>
                 </div>
-                <div class="card shadow-card">
+                <div class="card shadow-card course-card">
                   <img src="images/course-2.png" />
                   <div class="slide-card-text padding-card">
                     <a href="#" class="slide-card-title"> Fizika </a>
@@ -193,10 +216,10 @@
                       Fizika fanini mukammal o‘rganish yangi metodikasi bilan
                       o‘rganamiz.
                     </p>
-                    <a href="#" class="yellow-btn">kursga yozilish</a>
+                    <a href="#" class="dark-btn">kursga yozilish</a>
                   </div>
                 </div>
-                <div class="card shadow-card">
+                <div class="card shadow-card course-card">
                   <img src="images/course-3.png" />
                   <div class="slide-card-text padding-card">
                     <a href="#" class="slide-card-title"> Ingliz tili </a>
@@ -204,10 +227,10 @@
                       Ingliz tili fanini mukammal o‘rganish yangi metodikasi
                       bilan o‘rganamiz.
                     </p>
-                    <a href="#" class="yellow-btn">kursga yozilish</a>
+                    <a href="#" class="dark-btn">kursga yozilish</a>
                   </div>
                 </div>
-                <div class="card shadow-card">
+                <div class="card shadow-card course-card">
                   <img src="images/course-1.png" />
                   <div class="slide-card-text padding-card">
                     <a href="#" class="slide-card-title"> Matematika </a>
@@ -215,10 +238,10 @@
                       Matematika fanini mukammal o‘rganish yangi metodikasi
                       bilan o‘rganamiz.
                     </p>
-                    <a href="#" class="yellow-btn">kursga yozilish</a>
+                    <a href="#" class="dark-btn">kursga yozilish</a>
                   </div>
                 </div>
-                <div class="card shadow-card">
+                <div class="card shadow-card course-card">
                   <img src="images/course-2.png" />
                   <div class="slide-card-text padding-card">
                     <a href="#" class="slide-card-title"> Fizika </a>
@@ -226,10 +249,10 @@
                       Fizika fanini mukammal o‘rganish yangi metodikasi bilan
                       o‘rganamiz.
                     </p>
-                    <a href="#" class="yellow-btn">kursga yozilish</a>
+                    <a href="#" class="dark-btn">kursga yozilish</a>
                   </div>
                 </div>
-                <div class="card shadow-card">
+                <div class="card shadow-card course-card">
                   <img src="images/course-3.png" />
                   <div class="slide-card-text padding-card">
                     <a href="#" class="slide-card-title"> Ingliz tili </a>
@@ -237,10 +260,10 @@
                       Ingliz tili fanini mukammal o‘rganish yangi metodikasi
                       bilan o‘rganamiz.
                     </p>
-                    <a href="#" class="yellow-btn">kursga yozilish</a>
+                    <a href="#" class="dark-btn">kursga yozilish</a>
                   </div>
                 </div>
-                <div class="card shadow-card">
+                <div class="card shadow-card course-card">
                   <img src="images/course-1.png" />
                   <div class="slide-card-text padding-card">
                     <a href="#" class="slide-card-title"> Matematika </a>
@@ -248,10 +271,10 @@
                       Matematika fanini mukammal o‘rganish yangi metodikasi
                       bilan o‘rganamiz.
                     </p>
-                    <a href="#" class="yellow-btn">kursga yozilish</a>
+                    <a href="#" class="dark-btn">kursga yozilish</a>
                   </div>
                 </div>
-                <div class="card shadow-card">
+                <div class="card shadow-card course-card">
                   <img src="images/course-2.png" />
                   <div class="slide-card-text padding-card">
                     <a href="#" class="slide-card-title"> Fizika </a>
@@ -259,10 +282,10 @@
                       Fizika fanini mukammal o‘rganish yangi metodikasi bilan
                       o‘rganamiz.
                     </p>
-                    <a href="#" class="yellow-btn">kursga yozilish</a>
+                    <a href="#" class="dark-btn">kursga yozilish</a>
                   </div>
                 </div>
-                <div class="card shadow-card">
+                <div class="card shadow-card course-card">
                   <img src="images/course-3.png" />
                   <div class="slide-card-text padding-card">
                     <a href="#" class="slide-card-title"> Ingliz tili </a>
@@ -270,7 +293,7 @@
                       Ingliz tili fanini mukammal o‘rganish yangi metodikasi
                       bilan o‘rganamiz.
                     </p>
-                    <a href="#" class="yellow-btn">kursga yozilish</a>
+                    <a href="#" class="dark-btn">kursga yozilish</a>
                   </div>
                 </div>
               </div>
@@ -290,7 +313,7 @@
           <div class="center">
             <div class="wrapper">
               <div class="inner3">
-                <div class="card shadow-card">
+                <div class="card shadow-card teacher-card">
                   <img src="images/teacher-1.png" />
                   <div class="slide-card-text padding-card">
                     <a href="#" class="slide-card-title teacher-name">
@@ -304,7 +327,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="card shadow-card">
+                <div class="card shadow-card teacher-card">
                   <img src="images/teacher-2.png" />
                   <div class="slide-card-text padding-card">
                     <a href="#" class="slide-card-title"> Ergashev Jasur </a>
@@ -316,7 +339,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="card shadow-card">
+                <div class="card shadow-card teacher-card">
                   <img src="images/teacher-3.png" />
                   <div class="slide-card-text padding-card">
                     <a href="#" class="slide-card-title teacher-name">
@@ -330,7 +353,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="card shadow-card">
+                <div class="card shadow-card teacher-card">
                   <img src="images/teacher-1.png" />
                   <div class="slide-card-text padding-card">
                     <a href="#" class="slide-card-title teacher-name">
@@ -344,7 +367,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="card shadow-card">
+                <div class="card shadow-card teacher-card">
                   <img src="images/teacher-2.png" />
                   <div class="slide-card-text padding-card">
                     <a href="#" class="slide-card-title"> Ergashev Jasur </a>
@@ -356,7 +379,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="card shadow-card">
+                <div class="card shadow-card teacher-card">
                   <img src="images/teacher-3.png" />
                   <div class="slide-card-text padding-card">
                     <a href="#" class="slide-card-title teacher-name">
@@ -370,7 +393,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="card shadow-card">
+                <div class="card shadow-card teacher-card">
                   <img src="images/teacher-1.png" />
                   <div class="slide-card-text padding-card">
                     <a href="#" class="slide-card-title teacher-name">
@@ -384,7 +407,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="card shadow-card">
+                <div class="card shadow-card teacher-card">
                   <img src="images/teacher-2.png" />
                   <div class="slide-card-text padding-card">
                     <a href="#" class="slide-card-title"> Ergashev Jasur </a>
@@ -396,7 +419,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="card shadow-card">
+                <div class="card shadow-card teacher-card">
                   <img src="images/teacher-3.png" />
                   <div class="slide-card-text padding-card">
                     <a href="#" class="slide-card-title teacher-name">
@@ -611,6 +634,7 @@
           </div>
         </section>
 
+        <!-- * Clients section -->
         <section class="clients section">
           <h1 class="section-title">mijozlarimiz izohlari</h1>
           <div class="center">
@@ -788,6 +812,7 @@
           </div>
         </section>
 
+        <!-- * Map section -->
         <section class="map section">
           <h1 class="section-title">biz bilan bog’lanish</h1>
           <!-- <div id="map"></div> -->
@@ -818,10 +843,12 @@
           </ul>
         </section>
       </main>
+      <!-- * Footer -->
       <footer class="footer">
         <h1 class="footer-title">aloqa</h1>
         <form class="form">
           <input
+            class="footer-input"
             type="text"
             name="name"
             placeholder="Ism va familiyangizni yozing"
@@ -829,6 +856,7 @@
             required
           />
           <input
+            class="footer-input"
             type="number"
             name="phone"
             placeholder="Telefon raqamingizni yozing"
@@ -836,21 +864,22 @@
             required
           />
           <input
+            class="footer-input"
             type="email"
             name="email"
             placeholder="Email manzilingizni yozing"
             autocomplete="off"
             required
           />
-          <button type="submit">yuborish</button>
+          <button type="submit" class="submit-btn">yuborish</button>
         </form>
         <span class="line"></span>
         <div class="copyright">
           <a href="#" class="footer-logo">
-            <img src="images/white-logo.png" alt="white-logo" />
+            <img src="images/black-logo.png" alt="black-logo" />
             <div class="footer-logo-text">
-              <h1>apex ta’lim</h1>
-              <p>Talaba bo‘lishingizga albatta ishonamiz</p>
+              <h1 class="logo-title">apex ta’lim</h1>
+              <p class="logo-desc">Talaba bo‘lishingizga albatta ishonamiz</p>
             </div>
           </a>
         </div>
