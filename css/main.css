@@ -5,6 +5,7 @@
   list-style: none;
   text-decoration: none;
   font-family: Montserrat, "sans-serif";
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -139,7 +140,7 @@
   padding: 9.4rem 8rem;
 }
 .container .main .section {
-  margin-bottom: 9.4rem;
+  padding-top: 9.4rem;
 }
 .container .main .section .section-title {
   font-weight: bold;
@@ -364,7 +365,7 @@
   text-transform: capitalize;
 }
 .card .slide-card-text .slide-card-title:hover {
-  color: #ecfefa;
+  color: #00445b;
 }
 .card .slide-card-text .slide-card-date {
   font-weight: lighter;
@@ -417,6 +418,9 @@
 .course-card {
   height: 393px;
 }
+.course-card .slide-card-title:hover {
+  color: #000 !important;
+}
 
 .teacher-card {
   height: 401px;
@@ -456,6 +460,9 @@
 }
 .client-card .slide-card-text {
   padding: 37px 35px 37px 37px;
+}
+.client-card .slide-card-title:hover {
+  color: #000 !important;
 }
 .client-card .slide-card-mute {
   font-size: 0.9rem;

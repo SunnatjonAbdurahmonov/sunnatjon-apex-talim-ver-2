@@ -33,6 +33,7 @@ $lighten: #ecfefa;
   list-style: none;
   text-decoration: none;
   font-family: Montserrat, "sans-serif";
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -194,7 +195,7 @@ $lighten: #ecfefa;
     padding: 9.4rem 8rem;
 
     .section {
-      margin-bottom: 9.4rem;
+      padding-top: 9.4rem;
       .section-title {
         font-weight: bold;
         font-size: 2rem;
@@ -427,7 +428,7 @@ $lighten: #ecfefa;
       text-transform: capitalize;
 
       &:hover {
-        color: $lighten;
+        color: $dark-blue;
       }
     }
     .slide-card-date {
@@ -467,6 +468,12 @@ $lighten: #ecfefa;
 
 .course-card {
   height: 393px;
+
+  .slide-card-title {
+    &:hover {
+      color: #000 !important;
+    }
+  }
 }
 
 .teacher-card {
@@ -512,6 +519,11 @@ $lighten: #ecfefa;
   height: 415px;
   .slide-card-text {
     padding: 37px 35px 37px 37px;
+  }
+  .slide-card-title {
+    &:hover {
+      color: #000 !important;
+    }
   }
   .slide-card-mute {
     font-size: 0.9rem;
