@@ -23,7 +23,7 @@ window.addEventListener("DOMContentLoaded", function () {
   executeRating(ratingStars);
 
   window.addEventListener("scroll", function () {
-    const navbar = document.querySelector(".navbar");
+    const navbar = document.querySelector(".navbar-wrapper");
     navbar.classList.toggle("sticky", window.scrollY > 50);
   });
 
@@ -43,7 +43,7 @@ window.addEventListener("DOMContentLoaded", function () {
         slides.style.transform = "translateX(-33.7%)";
         e.target.classList.add("active");
       } else if (e.target.classList.contains("third")) {
-        slides.style.transform = "translatex(-67.4%)";
+        slides.style.transform = "translatex(-67.2%)";
         e.target.classList.add("active");
       }
     }
@@ -65,7 +65,7 @@ window.addEventListener("DOMContentLoaded", function () {
         slides2.style.transform = "translateX(-33.8%)";
         e.target.classList.add("active");
       } else if (e.target.classList.contains("sixth")) {
-        slides2.style.transform = "translateX(-67.7%)";
+        slides2.style.transform = "translateX(-67.4%)";
         e.target.classList.add("active");
       }
     }
@@ -87,7 +87,7 @@ window.addEventListener("DOMContentLoaded", function () {
         slides3.style.transform = "translateX(-33.8%)";
         e.target.classList.add("active");
       } else if (e.target.classList.contains("nineth")) {
-        slides3.style.transform = "translateX(-67.7%)";
+        slides3.style.transform = "translateX(-67.4%)";
         e.target.classList.add("active");
       }
     }
@@ -153,7 +153,7 @@ window.addEventListener("DOMContentLoaded", function () {
         slides6.style.transform = "translateX(-33.8%)";
         e.target.classList.add("active");
       } else if (e.target.classList.contains("eighteenth")) {
-        slides6.style.transform = "translateX(-67.7%)";
+        slides6.style.transform = "translateX(-67.4%)";
         e.target.classList.add("active");
       }
     }
