@@ -1149,6 +1149,9 @@ body {
     justify-content: flex-start !important;
   }
 
+  .course-popup-wrapper {
+    height: 100vh !important;
+  }
   .course-popup-wrapper .course-popup {
     width: 100% !important;
     height: 100vh !important;
