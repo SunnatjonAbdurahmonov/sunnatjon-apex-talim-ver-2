@@ -1151,7 +1151,7 @@ body {
 
   .course-popup-wrapper .course-popup {
     width: 100% !important;
-    height: 100% !important;
+    height: 100vh !important;
   }
   .course-popup-wrapper .popup-header {
     height: 80px;
