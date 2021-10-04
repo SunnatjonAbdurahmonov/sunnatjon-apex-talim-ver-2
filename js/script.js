@@ -37,6 +37,20 @@ window.addEventListener("DOMContentLoaded", function () {
     navList.classList.toggle("nav-active");
   });
 
+  //* Popup
+
+  const courseBtn = document.querySelector(".course-btn");
+  const closeBtn = document.querySelector(".close-popup");
+  const popup = document.querySelector(".course-popup-wrapper");
+
+  courseBtn.addEventListener("click", () => {
+    popup.classList.add("show-popup");
+    console.log("hello");
+  });
+  closeBtn.addEventListener("click", () => {
+    popup.classList.remove("show-popup");
+  });
+
   //* First slide
   const buttonsWrapper = document.querySelector(".map");
   const slides = document.querySelector(".inner");

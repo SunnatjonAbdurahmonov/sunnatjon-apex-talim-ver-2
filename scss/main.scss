@@ -222,6 +222,130 @@ body {
   }
 }
 
+.course-popup-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.317);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -9999;
+  opacity: 0;
+  transition: all 0.3s;
+
+  .course-popup {
+    width: 657px;
+    height: 687px;
+  }
+  .popup-header {
+    width: 100%;
+    height: 140px;
+    padding: 20px 0;
+    background-color: $dark-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .popup-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .popup-logo__title {
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 30px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      margin-left: 20px;
+      color: #ffffff;
+    }
+  }
+
+  .close-popup {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    cursor: pointer;
+    .popup-btn-line {
+      width: 24px;
+      height: 3px;
+      display: inline-block;
+      background-color: #fff;
+
+      &:nth-child(1) {
+        transform: translateX(24px) rotate(45deg);
+      }
+      &:nth-child(2) {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .popup-main {
+    height: 547px;
+    padding: 50px 100px;
+    background-color: #ecfefa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .popup-main__title {
+      font-weight: 500;
+      font-size: 43px;
+      line-height: 52px;
+      letter-spacing: 0.02em;
+      margin-bottom: 80px;
+    }
+    .popup-form {
+      .popup-input {
+        width: 100%;
+        padding: 22px;
+        border: 0.5px solid #646464;
+        outline: none;
+        font-size: 18px;
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
+        &:nth-child(1) {
+          margin-bottom: 40px;
+        }
+      }
+      .popup-input[type="number"] {
+        -moz-appearance: textfield;
+      }
+
+      .popup-btn {
+        width: 234px;
+        height: 65px;
+        cursor: pointer;
+        @include btn();
+        margin-top: 80px;
+        margin-left: auto;
+      }
+    }
+  }
+}
+.show-popup {
+  display: flex;
+  z-index: 9999;
+  opacity: 1;
+}
+
 @media only screen and (min-width: 1200px) and (max-width: 1439px) {
   .container-wrapper {
     width: 100% !important;
@@ -263,6 +387,37 @@ body {
 
   .section {
     padding-top: 4.5rem !important;
+  }
+
+  .course-popup-wrapper {
+    .course-popup {
+      width: 600px !important;
+      height: 595px !important;
+
+      .popup-header {
+        height: 100px;
+      }
+
+      .popup-logo {
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+
+      .popup-main {
+        padding: 30px 60px;
+        justify-content: flex-start;
+
+        .popup-main__title {
+          margin-bottom: 50px;
+        }
+
+        .popup-btn {
+          margin-top: 50px;
+        }
+      }
+    }
   }
 }
 @media only screen and (min-width: 350px) and (max-width: 768px) {
@@ -332,6 +487,48 @@ body {
     .contact-item {
       margin-bottom: 10px;
       justify-content: flex-start !important;
+    }
+  }
+
+  .course-popup-wrapper {
+    .course-popup {
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    .popup-header {
+      height: 80px;
+    }
+
+    .popup-logo {
+      img {
+        width: 60px;
+        height: 60px;
+      }
+      .popup-logo__title {
+        font-size: 18px;
+      }
+    }
+
+    .popup-main {
+      padding: 10px 20px;
+
+      .popup-main__title {
+        font-size: 32px;
+        margin-bottom: 30px;
+      }
+
+      .popup-form {
+        .popup-input {
+          padding: 14px;
+        }
+
+        .popup-btn {
+          width: 180px;
+          height: 52px;
+          margin-top: 40px;
+        }
+      }
     }
   }
 }
