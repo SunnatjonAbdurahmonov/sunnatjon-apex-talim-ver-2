@@ -1165,6 +1165,7 @@ body {
   }
   .course-popup-wrapper .popup-main {
     padding: 10px 20px;
+    justify-content: flex-start;
   }
   .course-popup-wrapper .popup-main .popup-main__title {
     font-size: 32px;
