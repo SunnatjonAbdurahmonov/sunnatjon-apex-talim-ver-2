@@ -215,12 +215,6 @@ body {
               i {
                 transition: all 0.3s;
               }
-
-              &:hover {
-                i {
-                  color: $lighten;
-                }
-              }
             }
           }
         }
@@ -260,7 +254,7 @@ body {
   .main-text {
     display: inline-block !important;
 
-    .text-col{
+    .text-col {
       width: 100% !important;
     }
   }

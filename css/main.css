@@ -382,6 +382,7 @@
 }
 .navbar .nav-list {
   display: flex;
+  transition: all 0.3s;
 }
 .navbar .nav-list .nav-link {
   display: inline-block;
@@ -831,9 +832,6 @@ body {
 }
 .container .main .maps .contact-us .contact-item .socials a i {
   transition: all 0.3s;
-}
-.container .main .maps .contact-us .contact-item .socials a:hover i {
-  color: #ecfefa;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1439px) {

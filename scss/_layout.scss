@@ -64,6 +64,7 @@ $lighten: #ecfefa;
 
   .nav-list {
     display: flex;
+    transition: all 0.3s;
 
     .nav-link {
       display: inline-block;
