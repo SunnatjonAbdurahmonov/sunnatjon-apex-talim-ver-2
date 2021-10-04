@@ -300,6 +300,9 @@ $lighten: #ecfefa;
       transform: translateX(100%);
       width: 100%;
       height: 100vh;
+      padding-top: 50px;
+      z-index: 11111111;
+      background-color: $lighten;
       .nav-link {
         font-size: 1.5rem;
         display: inline-block;

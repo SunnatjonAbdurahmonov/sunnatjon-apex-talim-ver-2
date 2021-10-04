@@ -665,6 +665,9 @@
     transform: translateX(100%);
     width: 100%;
     height: 100vh;
+    padding-top: 50px;
+    z-index: 11111111;
+    background-color: #ecfefa;
   }
   .navbar .nav-list .nav-link {
     font-size: 1.5rem;
@@ -773,6 +776,7 @@ body {
 }
 .container .main-row .main-text .text-col:nth-child(2) .col-img {
   position: relative;
+  z-index: -1;
 }
 .container .main-row .main-text .text-col:nth-child(2) .col-img::before {
   content: "";
