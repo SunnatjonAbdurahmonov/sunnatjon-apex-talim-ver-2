@@ -22,9 +22,19 @@ window.addEventListener("DOMContentLoaded", function () {
 
   executeRating(ratingStars);
 
+  const navbar = document.querySelector(".navbar-wrapper");
+
   window.addEventListener("scroll", function () {
-    const navbar = document.querySelector(".navbar-wrapper");
     navbar.classList.toggle("sticky", window.scrollY > 50);
+    // navbar.classList.toggle("sticky", window.scrollY > 50);
+  });
+
+  const hamburgerMenu = document.querySelector(".hamburger-menu");
+  const navList = document.querySelector(".nav-list");
+
+  hamburgerMenu.addEventListener("click", () => {
+    hamburgerMenu.classList.toggle("hamburger-active");
+    navList.classList.toggle("nav-active");
   });
 
   //* First slide

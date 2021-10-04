@@ -45,7 +45,7 @@ $lighten: #ecfefa;
   .inner5,
   .inner6 {
     display: flex;
-    grid-gap: 3em;
+    grid-gap: 30px;
     justify-content: space-between;
     transition: all 1s ease-in-out;
     padding: 0 0 40px 0;
@@ -122,7 +122,11 @@ $lighten: #ecfefa;
 }
 
 .teacher-card {
-  height: 401px;
+  height: 375px;
+  .teacher-info {
+    margin: 0 !important;
+    line-height: 25px !important;
+  }
 }
 
 .pupil-card {
@@ -146,7 +150,8 @@ $lighten: #ecfefa;
   img {
     position: absolute;
     top: -60px;
-    left: 130px;
+    left: 50%;
+    transform: translate(-50%, 0%);
   }
 
   &:hover {
@@ -253,4 +258,108 @@ $lighten: #ecfefa;
   mask-position: center;
   -webkit-mask-position: center;
   cursor: pointer;
+}
+
+//* Media Styles
+
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+  .card {
+    width: 350px;
+    height: auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .slide-card-text {
+      padding: 20px;
+    }
+  }
+
+  .pupil-card {
+    height: 170px;
+    img {
+      width: 90px;
+    }
+  }
+
+  .inner5 {
+    width: 410%;
+  }
+  .inner,
+  .inner2,
+  .inner3,
+  .inner4,
+  .inner6 {
+    width: 310%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .card {
+    width: 350px;
+    height: auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .slide-card-text {
+      padding: 20px;
+    }
+  }
+
+  .pupil-card {
+    height: 220px;
+    img {
+      width: 90px;
+    }
+  }
+
+  .inner5 {
+    width: 410%;
+  }
+
+  .inner,
+  .inner2,
+  .inner3,
+  .inner4,
+  .inner6 {
+    width: 310%;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 768px) {
+  .wrapper {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 768px) {
+  .inner,
+  .inner2,
+  .inner3,
+  .inner6 {
+    width: 329%;
+  }
+  .card {
+    min-width: 31%;
+    height: auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .slide-card-text {
+      padding: 25px;
+    }
+  }
+
+  .pupil-card {
+    min-width: 0;
+    height: 224px;
+    img {
+      width: 100px;
+    }
+  }
 }
