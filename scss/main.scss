@@ -55,7 +55,6 @@ body {
 
 .container {
   width: 100%;
-  // * Enter styles// * Navbar styles
 
   .main-row {
     width: 100%;
@@ -335,6 +334,25 @@ body {
     .contact-item {
       margin-bottom: 10px;
       justify-content: flex-start !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 675px) {
+  .photos-wrapper {
+    justify-content: center !important;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 809px) {
+  .photos-wrapper {
+    justify-content: center !important;
+  }
+}
+@media only screen and (min-width: 810px) and (max-width: 1439px) {
+  .photos-wrapper {
+    img {
+      width: 246px;
+      height: 179px;
     }
   }
 }
