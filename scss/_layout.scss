@@ -236,7 +236,6 @@ $lighten: #ecfefa;
     width: 100%;
     padding: 1rem;
     display: flex;
-    // flex-wrap: nowrap;
     align-items: center;
 
     .nav-list {
@@ -251,13 +250,14 @@ $lighten: #ecfefa;
       .nav-link {
         display: inline-block;
         margin: 0 20px 0 0;
+        font-size: 1.2rem;
       }
     }
 
     .logo {
       margin: 0 auto 20px;
       .logo-title {
-        font-size: 1rem;
+        font-size: 1.5rem;
         line-height: 20px;
       }
       img {
@@ -303,10 +303,11 @@ $lighten: #ecfefa;
       padding-top: 50px;
       z-index: 11111111;
       background-color: $lighten;
+      justify-content: flex-start;
       .nav-link {
         font-size: 1.5rem;
         display: inline-block;
-        margin: 0 0 20px 0;
+        margin: 0 0 30px 0;
       }
     }
 

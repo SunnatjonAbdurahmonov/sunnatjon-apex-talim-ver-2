@@ -383,7 +383,7 @@ body {
   }
 
   .main {
-    padding: 0 2.25rem 2rem !important;
+    padding: 0 7.25rem 2rem !important;
   }
 
   .section {
@@ -391,9 +391,10 @@ body {
   }
 
   .course-popup-wrapper {
+    align-items: flex-start;
     .course-popup {
       width: 600px !important;
-      height: 595px !important;
+      height: 100% !important;
 
       .popup-header {
         height: 100px;
@@ -409,6 +410,7 @@ body {
       .popup-main {
         padding: 30px 60px;
         justify-content: flex-start;
+        height: 100% !important;
 
         .popup-main__title {
           margin-bottom: 50px;
@@ -420,14 +422,16 @@ body {
       }
     }
   }
+
+
 }
-@media only screen and (min-width: 350px) and (max-width: 768px) {
+@media only screen and (min-width: 350px) and (max-width: 767px) {
   html {
     font-size: 12px;
   }
 
   .main {
-    padding: 4rem 1rem !important;
+    padding: 4rem !important;
   }
 
   .container-wrapper {
@@ -515,6 +519,7 @@ body {
     .popup-main {
       padding: 10px 20px;
       justify-content: flex-start;
+      height: 100%;
 
       .popup-main__title {
         font-size: 32px;

@@ -365,11 +365,6 @@
     width: 310%;
   }
 }
-@media only screen and (min-width: 550px) and (max-width: 768px) {
-  .wrapper {
-    width: 80%;
-  }
-}
 @media only screen and (min-width: 350px) and (max-width: 768px) {
   .inner,
 .inner2,
@@ -392,15 +387,15 @@
 
   .pupil-card {
     min-width: 0;
-    height: 224px;
+    height: 300px;
   }
   .pupil-card img {
-    width: 100px;
+    width: 90px;
   }
 
   .youtube-card {
-    min-width: 0;
-    width: 330px;
+    min-width: 118%;
+    width: 100%;
   }
 }
 .navbar-wrapper {
@@ -622,12 +617,13 @@
   .navbar .nav-list .nav-link {
     display: inline-block;
     margin: 0 20px 0 0;
+    font-size: 1.2rem;
   }
   .navbar .logo {
     margin: 0 auto 20px;
   }
   .navbar .logo .logo-title {
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 20px;
   }
   .navbar .logo img {
@@ -668,11 +664,12 @@
     padding-top: 50px;
     z-index: 11111111;
     background-color: #ecfefa;
+    justify-content: flex-start;
   }
   .navbar .nav-list .nav-link {
     font-size: 1.5rem;
     display: inline-block;
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
   }
   .navbar .nav-active {
     z-index: 1111;
@@ -1064,16 +1061,19 @@ body {
   }
 
   .main {
-    padding: 0 2.25rem 2rem !important;
+    padding: 0 7.25rem 2rem !important;
   }
 
   .section {
     padding-top: 4.5rem !important;
   }
 
+  .course-popup-wrapper {
+    align-items: flex-start;
+  }
   .course-popup-wrapper .course-popup {
     width: 600px !important;
-    height: 595px !important;
+    height: 100% !important;
   }
   .course-popup-wrapper .course-popup .popup-header {
     height: 100px;
@@ -1085,6 +1085,7 @@ body {
   .course-popup-wrapper .course-popup .popup-main {
     padding: 30px 60px;
     justify-content: flex-start;
+    height: 100% !important;
   }
   .course-popup-wrapper .course-popup .popup-main .popup-main__title {
     margin-bottom: 50px;
@@ -1093,13 +1094,13 @@ body {
     margin-top: 50px;
   }
 }
-@media only screen and (min-width: 350px) and (max-width: 768px) {
+@media only screen and (min-width: 350px) and (max-width: 767px) {
   html {
     font-size: 12px;
   }
 
   .main {
-    padding: 4rem 1rem !important;
+    padding: 4rem !important;
   }
 
   .container-wrapper {
@@ -1173,6 +1174,7 @@ body {
   .course-popup-wrapper .popup-main {
     padding: 10px 20px;
     justify-content: flex-start;
+    height: 100%;
   }
   .course-popup-wrapper .popup-main .popup-main__title {
     font-size: 32px;

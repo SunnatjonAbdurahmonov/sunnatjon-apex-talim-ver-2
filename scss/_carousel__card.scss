@@ -388,12 +388,6 @@ $lighten: #ecfefa;
   }
 }
 
-@media only screen and (min-width: 550px) and (max-width: 768px) {
-  .wrapper {
-    width: 80%;
-  }
-}
-
 @media only screen and (min-width: 350px) and (max-width: 768px) {
   .inner,
   .inner2,
@@ -416,14 +410,14 @@ $lighten: #ecfefa;
 
   .pupil-card {
     min-width: 0;
-    height: 224px;
+    height: 300px;
     img {
-      width: 100px;
+      width: 90px;
     }
   }
 
   .youtube-card {
-    min-width: 0;
-    width: 330px;
+    min-width: 118%;
+    width: 100%;
   }
 }
