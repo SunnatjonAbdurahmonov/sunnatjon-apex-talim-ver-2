@@ -25,6 +25,9 @@
   transition: all 1s ease-in-out;
   padding: 0 0 40px 0;
 }
+.wrapper .inner5 {
+  width: 100%;
+}
 
 .shadow-card {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.13);
@@ -116,7 +119,7 @@
 .pupil-card {
   position: relative;
   transition: all 0.3s;
-  width: 369px;
+  min-width: 31.33333333%;
   height: 224px;
   display: flex;
   flex-wrap: wrap;
@@ -334,6 +337,10 @@
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .inner5 {
+    width: 150% !important;
+  }
+
   .card {
     width: 350px;
     height: auto;
@@ -347,7 +354,8 @@
   }
 
   .pupil-card {
-    height: 220px;
+    min-width: 31.33333333%;
+    height: 180px;
   }
   .pupil-card img {
     width: 90px;
@@ -365,12 +373,16 @@
     width: 310%;
   }
 }
-@media only screen and (min-width: 350px) and (max-width: 768px) {
+@media only screen and (min-width: 350px) and (max-width: 767px) {
   .inner,
 .inner2,
 .inner3,
 .inner6 {
     width: 329%;
+  }
+
+  .inner5 {
+    width: 100%;
   }
 
   .card {
@@ -386,15 +398,20 @@
   }
 
   .pupil-card {
-    min-width: 0;
-    height: 300px;
+    min-width: 100%;
+    height: 200px;
   }
   .pupil-card img {
+    top: -50px;
     width: 90px;
   }
 
+  .inner4 {
+    width: 100%;
+  }
+
   .youtube-card {
-    min-width: 118%;
+    min-width: 100%;
     width: 100%;
   }
 }
@@ -1061,7 +1078,7 @@ body {
   }
 
   .main {
-    padding: 0 7.25rem 2rem !important;
+    padding: 0 2.25rem 2rem !important;
   }
 
   .section {
@@ -1094,13 +1111,13 @@ body {
     margin-top: 50px;
   }
 }
-@media only screen and (min-width: 350px) and (max-width: 767px) {
+@media only screen and (min-width: 350px) and (max-width: 768px) {
   html {
     font-size: 12px;
   }
 
   .main {
-    padding: 4rem !important;
+    padding: 4rem 1.3rem !important;
   }
 
   .container-wrapper {

@@ -383,7 +383,7 @@ body {
   }
 
   .main {
-    padding: 0 7.25rem 2rem !important;
+    padding: 0 2.25rem 2rem !important;
   }
 
   .section {
@@ -425,13 +425,13 @@ body {
 
 
 }
-@media only screen and (min-width: 350px) and (max-width: 767px) {
+@media only screen and (min-width: 350px) and (max-width: 768px) {
   html {
     font-size: 12px;
   }
 
   .main {
-    padding: 4rem !important;
+    padding: 4rem 1.3rem !important;
   }
 
   .container-wrapper {

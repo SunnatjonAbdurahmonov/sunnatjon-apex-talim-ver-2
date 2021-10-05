@@ -152,10 +152,10 @@ window.addEventListener("DOMContentLoaded", function () {
         slides5.style.transform = "translateX(-0%)";
         e.target.classList.add("active");
       } else if (e.target.classList.contains("fourteenth")) {
-        slides5.style.transform = "translateX(-25.3%)";
+        slides5.style.transform = "translateX(-100%)";
         e.target.classList.add("active");
       } else if (e.target.classList.contains("fifteenth")) {
-        slides5.style.transform = "translateX(-50.6%)";
+        slides5.style.transform = "translateX(-204%)";
         e.target.classList.add("active");
       }
     }
