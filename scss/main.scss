@@ -1,0 +1,58 @@
+@use "./mixins" as mixins;
+@use "./layout" as layout;
+@use "./carousel" as carosuel;
+
+//* Colors
+$dark-blue: #00445b;
+$black: #000;
+$gray-64: #646464;
+$lighter: #ecfefa;
+$yellow: #fdb44b;
+$white: #ffffff;
+//!----------------------------------------
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  transition: all 0.3s linear;
+  scroll-behavior: smooth;
+  font-family: Montserrat, "sans-serif";
+}
+
+input {
+  @include mixins.card-desc();
+  border: none;
+  padding: 15px;
+  outline: none;
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &::placeholder {
+    color: $gray-64;
+  }
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+body {
+  background: linear-gradient(
+    124.06deg,
+    #ecfefa 9.47%,
+    #bee9ff 29.35%,
+    #dbeaff 60.79%,
+    #f3dbff 85.49%
+  );
+}
+
+.container {
+  width: 1366px;
+  h1 {
+    @include mixins.section-title();
+  }
+}

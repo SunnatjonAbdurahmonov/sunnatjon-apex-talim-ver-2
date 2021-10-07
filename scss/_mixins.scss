@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+//* Colors
+$dark-blue: #00445b;
+$black: #000;
+$gray-64: #646464;
+$lighter: #ecfefa;
+$yellow: #fdb44b;
+$white: #ffffff;
+
+//* Mixins
+@mixin section-title {
+  color: $dark-blue;
+  font-size: 2.06rem;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  line-height: 40px;
+  text-transform: capitalize;
+}
+
+@mixin card-title {
+  color: $black;
+  font-size: 1.125rem;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  line-height: 22px;
+}
+@mixin card-mute {
+  color: $gray-64;
+  font-size: 0.875rem;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  line-height: 17px;
+}
+@mixin card-desc {
+  color: $black;
+  font-size: 0.875rem;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  line-height: 120%;
+}
+@mixin button-font {
+  color: $white;
+  font-size: 0.875rem;
+  font-weight: bold;
+  letter-spacing: 2%;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+@mixin button {
+  @include button-font();
+  background-color: $dark-blue;
+  border: none;
+}
