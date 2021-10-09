@@ -6,3 +6,43 @@ $gray-64: #646464;
 $lighter: #ecfefa;
 $yellow: #fdb44b;
 $white: #ffffff;
+
+.splide,
+.splide2 {
+  &__arrows {
+    display: none;
+  }
+  &__pagination {
+    bottom: -55px !important;
+  }
+  &__slide {
+    width: calc(34.333333%) !important;
+  }
+  &__pagination__page {
+    background-color: $gray-64 !important;
+    width: 35px !important;
+    height: 4px !important;
+    border-radius: 0 !important;
+  }
+  &__pagination__page.is-active {
+    background-color: #00285b !important;
+    transform: scale(1) !important;
+  }
+  &__img {
+    filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.13));
+  }
+  &__desc {
+    @include mixins.card-desc();
+    display: block;
+    margin: 20px 0 10px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  &__mute {
+    @include mixins.card-mute();
+  }
+
+  .heading--2 {
+    @include mixins.card-title();
+  }
+}

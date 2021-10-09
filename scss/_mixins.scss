@@ -9,28 +9,37 @@ $yellow: #fdb44b;
 $white: #ffffff;
 
 //* Mixins
+@mixin nav__link {
+  display: flex;
+  color: #000000;
+  font-weight: 500;
+  font-size: 0.845rem;
+  line-height: 1rem;
+  letter-spacing: 0.02em;
+  margin-left: 1.875rem;
+}
 @mixin section-title {
   color: $dark-blue;
   font-size: 2.06rem;
   font-weight: bold;
   letter-spacing: 0.02em;
-  line-height: 40px;
+  line-height: 2.5rem;
   text-transform: capitalize;
+  margin-bottom: 1.9rem;
 }
-
 @mixin card-title {
   color: $black;
   font-size: 1.125rem;
   font-weight: bold;
   letter-spacing: 0.02em;
-  line-height: 22px;
+  line-height: 1.375rem;
 }
 @mixin card-mute {
   color: $gray-64;
   font-size: 0.875rem;
   font-weight: normal;
   letter-spacing: 0.02em;
-  line-height: 17px;
+  line-height: 1.06rem;
 }
 @mixin card-desc {
   color: $black;
@@ -44,12 +53,20 @@ $white: #ffffff;
   font-size: 0.875rem;
   font-weight: bold;
   letter-spacing: 2%;
-  line-height: 17px;
+  line-height: 1.06rem;
   text-transform: uppercase;
 }
-
 @mixin button {
   @include button-font();
   background-color: $dark-blue;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000000;
+
+  &:hover {
+    color: $dark-blue;
+    background-color: $lighter;
+  }
 }
