@@ -7,8 +7,7 @@ $lighter: #ecfefa;
 $yellow: #fdb44b;
 $white: #ffffff;
 
-.splide,
-.splide2 {
+.splide {
   &__arrows {
     display: none;
   }
@@ -28,21 +27,210 @@ $white: #ffffff;
     background-color: #00285b !important;
     transform: scale(1) !important;
   }
-  &__img {
+  &__shadow {
     filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.13));
-  }
-  &__desc {
-    @include mixins.card-desc();
-    display: block;
-    margin: 20px 0 10px;
-    font-weight: bold;
-    font-size: 18px;
   }
   &__mute {
     @include mixins.card-mute();
   }
 
+  &__body {
+    padding: 37px;
+    background-color: $lighter;
+    width: 92%;
+  }
+
   .heading--2 {
     @include mixins.card-title();
+    display: block;
+  }
+
+  &__desc {
+    @include mixins.card-desc();
+  }
+  .btn {
+    @include mixins.button();
+    width: 100%;
+    height: 2.875rem;
+    cursor: pointer;
+  }
+
+  &__player {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 5px;
+  }
+
+  &__player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: transparent;
+  }
+  &__player .play {
+    height: 72px;
+    width: 72px;
+    left: 50%;
+    top: 50%;
+    margin-left: -36px;
+    margin-top: -36px;
+    position: absolute;
+    background: url("../images/play-btn.png") no-repeat;
+    cursor: pointer;
+  }
+
+  &__player img:hover {
+    -webkit-filter: brightness(75%);
+    -moz-filter: brightness(75%);
+    filter: brightness(75%);
+  }
+
+  &__player img {
+    object-fit: cover;
+    display: block;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 104%;
+    width: 104%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    height: auto;
+    cursor: pointer;
+    -webkit-transition: 0.4s all;
+    -moz-transition: 0.4s all;
+    transition: 0.4s all;
+  }
+
+  &__result {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 260px;
+  }
+
+  &__result-body {
+    padding-top: 80px;
+    background: radial-gradient(
+      circle at 50% 0,
+      transparent 56px,
+      $white 0,
+      $white 100%
+    );
+  }
+
+  &__result-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-64%);
+    border: 7px solid transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translateX(-64%);
+    -moz-transform: translateX(-64%);
+    -ms-transform: translateX(-64%);
+    -o-transform: translateX(-64%);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .splide {
+    &__img {
+      width: 100%;
+      height: auto;
+    }
+    &__body {
+      width: 100%;
+    }
+    &__pagination {
+      bottom: -35px !important;
+    }
+    &__slide {
+      width: calc(100%) !important;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  .splide {
+    &__img {
+      width: 100%;
+      height: auto;
+    }
+    &__body {
+      width: 100%;
+    }
+    &__pagination {
+      bottom: -35px !important;
+    }
+    &__slide {
+      padding: 10px;
+    }
+    &__body {
+      padding: 20px;
+    }
+    &__result-body {
+      padding-top: 80px !important;
+    }
+
+    &__result-img {
+      top: 10px;
+      transform: translateX(-50%);
+    }
+  }
+}
+@media (min-width: 500px) and (max-width: 1100px) {
+  .splide {
+    &__result {
+      width: calc(48%) !important;
+      margin-left: 2% !important;
+    }
+    &__result-body {
+      padding: 90px 10px 10px;
+    }
+    &__result-img {
+      top: 20px;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .splide__result-img {
+    
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+}
+
+@media (min-width: 350px) and (max-width: 373px) {
+  .splide__result-img {
+    top: -6px;
+  }
+}
+@media (min-width: 350px) and (max-width: 369px) {
+  .section__photo {
+    width: 100% !important;
+    height: auto !important;
   }
 }

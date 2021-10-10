@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 //* Colors
 $dark-blue: #00445b;
 $black: #000;
@@ -12,8 +10,8 @@ $white: #ffffff;
 @mixin nav__link {
   display: flex;
   color: #000000;
-  font-weight: 500;
   font-size: 0.845rem;
+  font-weight: 500;
   line-height: 1rem;
   letter-spacing: 0.02em;
   margin-left: 1.875rem;

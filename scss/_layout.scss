@@ -23,8 +23,6 @@ $white: #ffffff;
     display: flex;
     flex-wrap: wrap;
     margin-left: auto;
-    // opacity: 0;
-    // z-index: -2;
   }
   &__brand {
     display: flex;
@@ -68,6 +66,66 @@ $white: #ffffff;
     &:nth-child(2) {
       margin: 5px 0;
     }
+  }
+}
+
+.footer {
+  margin-top: 9.375rem;
+  background-color: #bee9ff;
+  &__container {
+    padding: 3.125rem 6.25rem;
+  }
+  &__heading-1 {
+    @include mixins.section-title();
+  }
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__input {
+    width: 20rem;
+    border: 1px solid transparent;
+
+    &:focus {
+      border-color: $dark-blue;
+    }
+  }
+  &__btn {
+    @include mixins.button();
+    width: 10.56rem;
+    height: 2.875rem;
+    cursor: pointer;
+  }
+  &__line {
+    width: 300px;
+    height: 1px;
+    background-color: #000;
+    margin: 50px auto;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 17rem;
+    text-align: center;
+  }
+  &__text {
+    margin-left: 20px;
+  }
+  &__logo-title {
+    @include mixins.section-title();
+    margin-bottom: 10px;
+    font-size: 1.375rem;
+  }
+  &__logo-subtitle {
+    @include mixins.card-desc();
+  }
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    @include mixins.card-desc();
+    font-weight: 300;
   }
 }
 
@@ -148,28 +206,66 @@ $white: #ffffff;
       height: 4.375rem;
     }
   }
-}
-
-
-@media (min-width: 767px) and (max-width: 1279px) {
-    .nav {
+  .footer {
+    &__container {
+      padding: 1rem;
+    }
+    &__form {
       display: inline-block;
-      padding: 1rem 0;
+      width: 100%;
+    }
+    &__input {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    &__logo {
+      width: 85%;
+      margin: 0 auto 20px;
       justify-content: center;
-  
-      &__logo {
-        width: 4rem;
-        height: 4rem;
-      }
-  
-      &__list {
-        justify-content: space-between;
-        margin-top: 1.5rem;
-      }
-  
-      &__link {
-        font-size: 1rem;
-        margin: 0;
-      }
+    }
+    &__brand {
+      width: 70px;
+      height: 70px;
+    }
+    &__text {
+      margin: 10px;
     }
   }
+}
+
+@media (min-width: 767px) and (max-width: 1279px) {
+  .nav {
+    display: inline-block;
+    padding: 1rem 0;
+    justify-content: center;
+
+    &__logo {
+      width: 4rem;
+      height: 4rem;
+    }
+
+    &__list {
+      justify-content: space-between;
+      margin-top: 1.5rem;
+    }
+
+    &__link {
+      font-size: 1rem;
+      margin: 0;
+    }
+  }
+  .footer {
+    &__logo {
+      width: 38%;
+      margin: 0 auto 20px;
+      justify-content: center;
+    }
+    &__brand {
+      width: 90px;
+      height: 90px;
+    }
+    &__input {
+      margin-bottom: 20px;
+    }
+  }
+}

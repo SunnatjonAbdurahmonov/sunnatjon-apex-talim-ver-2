@@ -20,10 +20,6 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    />
   </head>
   <body>
     <div class="container">
@@ -85,7 +81,14 @@
               <a href="#" class="btn">kursga yozilish</a>
             </div>
             <!--* Header img -->
-            <div class="header__img" loading="lazy"></div>
+            <div class="header__img">
+              <img
+                src="images/main-user.png"
+                alt="main-user"
+                width="407"
+                height="578"
+              />
+            </div>
           </div>
         </div>
       </header>
@@ -101,12 +104,12 @@
                       <img
                         src="images/news-1.png"
                         alt="news-1"
-                        class="splide__img"
+                        class="splide__shadow splide__img"
                         width="368"
                         height="178"
                       />
-                      <figcaption class="splide__body">
-                        <a href="#" class="splide__desc">
+                      <figcaption>
+                        <a href="#" class="heading--2 m-20-10">
                           Mental arifmetikani oson o‘rganamiz
                         </a>
                         <time class="splide__mute" datetime="22.09.2021">
@@ -118,14 +121,14 @@
                       <img
                         src="images/news-2.png"
                         alt="news-2"
-                        class="splide__img"
+                        class="splide__shadow splide__img"
                         width="368"
                         height="178"
                       />
-                      <figcaption class="splide__body">
-                        <a href="#" class="splide__desc"
-                          >IELTS imtihoni haqida</a
-                        >
+                      <figcaption>
+                        <a href="#" class="heading--2 m-20-10">
+                          IELTS imtihoni haqida
+                        </a>
                         <time class="splide__mute" datetime="20.09.2021">
                           20.09.2021
                         </time>
@@ -135,17 +138,17 @@
                       <img
                         src="images/news-3.png"
                         alt="news-3"
-                        class="splide__img"
+                        class="splide__shadow splide__img"
                         width="368"
                         height="178"
                       />
-                      <figcaption class="splide__body">
-                        <a href="#" class="splide__desc">
+                      <figcaption>
+                        <a href="#" class="heading--2 m-20-10">
                           Ingliz tilini bilish zamon talabi
                         </a>
                         <time class="splide__mute" datetime="12.09.2021">
-                          12.09.2021</time
-                        >
+                          12.09.2021
+                        </time>
                       </figcaption>
                     </figure>
                   </div>
@@ -156,7 +159,7 @@
           <section class="section section-courses" id="kurslar">
             <h1 class="section__head">kurslar</h1>
             <div class="section__body">
-              <div class="splide2">
+              <div class="splide2 splide">
                 <div class="splide__track">
                   <div class="splide__list">
                     <figure class="splide__slide">
@@ -166,11 +169,10 @@
                         class="splide__img"
                         width="368"
                         height="178"
-                        loading="lazy"
                       />
                       <figcaption class="splide__body">
-                        <h2 href="#" class="heading--2">matematika</h2>
-                        <p class="splide__desc">
+                        <h2 href="#" class="heading--2">Matematika</h2>
+                        <p class="splide__desc m-10-20">
                           Matematika fanini mukammal o‘rganish yangi metodikasi
                           bilan o‘rganamiz.
                         </p>
@@ -188,8 +190,8 @@
                         height="178"
                       />
                       <figcaption class="splide__body">
-                        <h2 href="#" class="heading--2">fizika</h2>
-                        <p class="splide__desc">
+                        <h2 href="#" class="heading--2">Fizika</h2>
+                        <p class="splide__desc m-10-20">
                           Fizika fanini mukammal o‘rganish yangi metodikasi
                           bilan o‘rganamiz.
                         </p>
@@ -207,8 +209,8 @@
                         height="178"
                       />
                       <figcaption class="splide__body">
-                        <h2 href="#" class="heading--2">ingliz tili</h2>
-                        <p class="splide__desc">
+                        <h2 href="#" class="heading--2">Ingliz tili</h2>
+                        <p class="splide__desc m-10-20">
                           Ingliz tili fanini mukammal o‘rganish yangi metodikasi
                           bilan o‘rganamiz.
                         </p>
@@ -224,36 +226,409 @@
           </section>
           <section class="section section-tutors" id="ustozlar">
             <h1 class="section__head">ustozlar</h1>
-            <div class="section__body"></div>
+            <div class="section__body">
+              <div class="splide3 splide">
+                <div class="splide__track">
+                  <div class="splide__list">
+                    <figure class="splide__slide">
+                      <img
+                        src="images/teacher-1.png"
+                        alt="teacher-1"
+                        class="splide__img"
+                        width="368"
+                        height="214"
+                      />
+                      <figcaption class="splide__body">
+                        <h2 href="#" class="heading--2 text-capitalize">
+                          asadov qodir
+                        </h2>
+                        <p class="splide__desc mt-20">
+                          Matematika fani o‘qituvchisi
+                        </p>
+                        <p class="splide__desc m-10-0">
+                          Ish tajribasi: <span class="experinece">8 yil</span>
+                        </p>
+                        <p class="splide__desc">
+                          O‘qitgan talabalari soni:
+                          <span class="pupils">500+</span>
+                        </p>
+                      </figcaption>
+                    </figure>
+                    <figure class="splide__slide">
+                      <img
+                        src="images/teacher-2.png"
+                        alt="teacher-2"
+                        class="splide__img"
+                        width="368"
+                        height="214"
+                      />
+                      <figcaption class="splide__body">
+                        <h2 href="#" class="heading--2 text-capitalize">
+                          ergashev jasur
+                        </h2>
+                        <p class="splide__desc mt-20">
+                          Fizika fani o‘qituvchisi
+                        </p>
+                        <p class="splide__desc m-10-0">
+                          Ish tajribasi: <span class="experinece">5 yil</span>
+                        </p>
+                        <p class="splide__desc">
+                          O‘qitgan talabalari soni:
+                          <span class="pupils">400+</span>
+                        </p>
+                      </figcaption>
+                    </figure>
+                    <figure class="splide__slide">
+                      <img
+                        src="images/teacher-3.png"
+                        alt="teacher-3"
+                        class="splide__img"
+                        width="368"
+                        height="214"
+                      />
+                      <figcaption class="splide__body">
+                        <h2 href="#" class="heading--2 text-capitalize">
+                          murodov alibek
+                        </h2>
+                        <p class="splide__desc mt-20">
+                          Ingliz tili fani o‘qituvchisi
+                        </p>
+                        <p class="splide__desc m-10-0">
+                          Ish tajribasi: <span class="experinece">4 yil</span>
+                        </p>
+                        <p class="splide__desc">
+                          O‘qitgan talabalari soni:
+                          <span class="pupils">300+</span>
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
           <section class="section section-img-moments" id="fotolavhalar">
             <h1 class="section__head">darslardan fotolavhalar</h1>
-            <div class="section__body"></div>
+            <div class="section__photo-body">
+              <figure class="section__img-block">
+                <img
+                  src="images/lesson-photo-1.png"
+                  alt="lesson-photo-1"
+                  width="369"
+                  height="273"
+                  class="section__photo section__open-modal"
+                />
+              </figure>
+              <figure class="section__img-block">
+                <img
+                  src="images/lesson-photo-2.png"
+                  alt="lesson-photo-2"
+                  width="369"
+                  height="273"
+                  class="section__photo section__open-modal"
+                />
+              </figure>
+              <figure class="section__img-block">
+                <img
+                  src="images/lesson-photo-3.png"
+                  alt="lesson-photo-3"
+                  width="369"
+                  height="273"
+                  class="section__photo section__open-modal"
+                />
+              </figure>
+              <figure class="section__img-block">
+                <img
+                  src="images/lesson-photo-4.png"
+                  alt="lesson-photo-4"
+                  width="369"
+                  height="273"
+                  class="section__photo section__open-modal"
+                />
+              </figure>
+              <figure class="section__img-block">
+                <img
+                  src="images/lesson-photo-5.png"
+                  alt="lesson-photo-5"
+                  width="369"
+                  height="273"
+                  class="section__photo section__open-modal"
+                />
+              </figure>
+              <figure class="section__img-block">
+                <img
+                  src="images/lesson-photo-6.png"
+                  alt="lesson-photo-6"
+                  width="369"
+                  height="273"
+                  class="section__photo section__open-modal"
+                />
+              </figure>
+            </div>
           </section>
           <section class="section section-video-moments" id="videolavhalar">
             <h1 class="section__head">darslardan videolavhalar</h1>
-            <div class="section__body"></div>
+            <div class="section__body">
+              <div class="splide4 splide">
+                <div class="splide__track">
+                  <div class="splide__list">
+                    <figure class="splide__slide">
+                      <div class="splide__player" data-id="E9OKpacyUSc"></div>
+                    </figure>
+                    <figure class="splide__slide">
+                      <div class="splide__player" data-id="KPPhQ0F-SDY"></div>
+                    </figure>
+                    <figure class="splide__slide">
+                      <div class="splide__player" data-id="gdqjNTgRmIw"></div>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
           <section class="section section-results" id="natijalar">
             <h1 class="section__head">o’quvhilarimizning natijalari</h1>
-            <div class="section__body"></div>
+            <div class="section__body">
+              <div class="splide5 splide">
+                <div class="splide__track">
+                  <div class="splide__list">
+                    <figure class="splide__slide splide__result">
+                      <img
+                        src="images/pupil-1.png"
+                        alt="pupil-1"
+                        class="splide__result-img"
+                        width="110"
+                        height="110"
+                      />
+                      <figcaption class="splide__body splide__result-body">
+                        <h2 href="#" class="heading--2 text-capitalize">
+                          norboyeva nodira
+                        </h2>
+                        <p class="splide__desc m-10-0">
+                          O‘qishga kirgan oliygoh nomi: <br />
+                          <span class="splide__university text-capitalize">
+                            toshkent davlat milliy universiteti
+                          </span>
+                        </p>
+                        <p class="splide__desc">
+                          Abiturientlik davri:
+                          <span class="splide__atb-date">
+                            6 oylik tayyorlov kursi
+                          </span>
+                        </p>
+                      </figcaption>
+                    </figure>
+                    <figure class="splide__slide splide__result">
+                      <img
+                        src="images/pupil-2.png"
+                        alt="pupil-2"
+                        class="splide__result-img"
+                        width="110"
+                        height="110"
+                      />
+                      <figcaption class="splide__body splide__result-body">
+                        <h2 href="#" class="heading--2 text-capitalize">
+                          mavlonov abdulla
+                        </h2>
+                        <p class="splide__desc m-10-0">
+                          O‘qishga kirgan oliygoh nomi: <br />
+                          <span class="splide__university text-capitalize">
+                            toshkent davlat yuridik universiteti
+                          </span>
+                        </p>
+                        <p class="splide__desc">
+                          Abiturientlik davri:
+                          <span class="splide__atb-date">
+                            8 oylik tayyorlov kursi
+                          </span>
+                        </p>
+                      </figcaption>
+                    </figure>
+                    <figure class="splide__slide splide__result">
+                      <img
+                        src="images/pupil-3.png"
+                        alt="pupil-3"
+                        class="splide__result-img"
+                        width="110"
+                        height="110"
+                      />
+                      <figcaption class="splide__body splide__result-body">
+                        <h2 href="#" class="heading--2 text-capitalize">
+                          yo‘lchiyeva madina
+                        </h2>
+                        <p class="splide__desc m-10-0">
+                          O‘qishga kirgan oliygoh nomi: <br />
+                          <span class="splide__university text-capitalize">
+                            toshkent davlat nizomiy universiteti
+                          </span>
+                        </p>
+                        <p class="splide__desc">
+                          Abiturientlik davri:
+                          <span class="splide__atb-date">
+                            5 oylik tayyorlov kursi
+                          </span>
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
           <section class="section section-reviews" id="izohlar">
             <h1 class="section__head">mijozlarimiz izohlari</h1>
-            <div class="section__body"></div>
+            <div class="section__body">
+              <div class="splide6 splide">
+                <div class="splide__track">
+                  <div class="splide__list">
+                    <figure class="splide__slide">
+                      <img
+                        src="images/client-1.png"
+                        alt="client-1"
+                        class="splide__img"
+                        width="368"
+                        height="214"
+                      />
+                      <figcaption class="splide__body">
+                        <h2 href="#" class="heading--2 text-capitalize">
+                          karimova odina
+                        </h2>
+                        <p class="splide__desc m-10-20">TDMI 1-kurs talabasi</p>
+                        <p class="splide__desc">
+                          Men talaba bo’lishimga sababchi bo‘lgan eng zo‘r o‘quv
+                          markaz.
+                        </p>
+                        <div class="rating mt-20">
+                          <span class="rating-star rating__star"></span>
+                          <span class="rating-star rating__star"></span>
+                          <span class="rating-star rating__star"></span>
+                          <span class="rating-star rating__star"></span>
+                          <span class="rating-star rating__star"></span>
+                        </div>
+                      </figcaption>
+                    </figure>
+                    <figure class="splide__slide">
+                      <img
+                        src="images/client-2.png"
+                        alt="client-2"
+                        class="splide__img"
+                        width="368"
+                        height="214"
+                      />
+                      <figcaption class="splide__body">
+                        <h2 href="#" class="heading--2 text-capitalize">
+                          azizova durdona
+                        </h2>
+                        <p class="splide__desc m-10-20">TATU 1-kurs talasi</p>
+                        <p class="splide__desc">
+                          Zamonaviy kasblarni o’rganish uchun qulay o’quv markaz
+                          deya tavsiya qilaman
+                        </p>
+                        <div class="rating mt-20">
+                          <span class="rating-star rating__star"></span>
+                          <span class="rating-star rating__star"></span>
+                          <span class="rating-star rating__star"></span>
+                          <span class="rating-star rating__star"></span>
+                          <span class="rating-star rating__star"></span>
+                        </div>
+                      </figcaption>
+                    </figure>
+                    </figure>
+                    <figure class="splide__slide">
+                      <img
+                        src="images/client-3.png"
+                        alt="client-3"
+                        class="splide__img"
+                        width="368"
+                        height="214"
+                      />
+                      <figcaption class="splide__body">
+                        <h2 href="#" class="heading--2 text-capitalize">
+                          madrahimov olimjon
+                        </h2>
+                        <p class="splide__desc m-10-20">TDYU 1-kurs talabasi</p>
+                        <p class="splide__desc">
+                          Eng tajribali ustozlar jamosiga ega o‘quv markaz sifatiad tavsiya qilaman.
+                        </p>
+                        <div class="rating mt-20">
+                          <span class="rating-star rating__star"></span>
+                          <span class="rating-star rating__star"></span>
+                          <span class="rating-star rating__star"></span>
+                          <span class="rating-star rating__star"></span>
+                          <span class="rating-star rating__star"></span>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
           <section class="section section-contact" id="aloqa">
             <h1 class="section__head">biz bilan bog’lanish</h1>
-            <div class="section__body"></div>
+            <div class="section__body">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d95897.62636741721!2d69.23238682753903!3d41.31319638975801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1633341108272!5m2!1sru!2s" width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+              <ul class="section__contact">
+                <li class="section__contact-item">
+                  <img src="images/icon-location.svg" alt="icon-location" class="section__contact-icon" width="24" height="24" />
+                  <p class="section__contact-text">Toshkent shahri, Chilonzor <br> tumani, Ustozlar ko’chasi, 13-uy</p>
+                </li>
+                <li class="section__contact-item">
+                  <img src="images/icon-phone.svg" alt="icon-phone" class="section__contact-icon" width="24" height="24" />
+                  <a href="tel:+998 90 350 55 55" class="section__contact-text">Toshkent +998 90 350 55 55</a>
+                </li>
+                <li class="section__contact-item">
+                  <img src="images/icon-mail.svg" alt="icon-mail" class="section__contact-icon" width="24" height="24" />
+                  <a href="mailto:apexedu@gmail.com" class="section__contact-text">apexedu@gmail.com</a>
+                </li>
+                <li class="section__contact-item">
+                  <p class="section__contact-links-text">Ijtimoiy tarmoqdagi sahifalarimiz:</p>
+                  <a href="#" class="section__links">
+                    <img src="images/icon-instagram.svg" alt="icon-instagram">
+                  </a>
+                  <a href="#" class="section__links">
+                    <img src="images/icon-telegram.svg" alt="icon-telegram">
+                  </a>
+                  <a href="#" class="section__links">
+                    <img src="images/icon-facebook.svg" alt="icon-facebook">
+                  </a>
+                </li>
+              </ul>
+            </div>
           </section>
         </div>
       </main>
       <footer class="footer">
         <div class="footer__container">
-          <h1 class="footer__head">aloqa</h1>
-          <div class="footer__body"></div>
+          <div class="footer__head">
+            <h1 class="footer__heading-1">aloqa</h1>
+            <form class="footer__form">
+              <input type="text" class="footer__input" required placeholder="Ism va familiyangizni yozing" />
+              <input type="number" class="footer__input" required placeholder="Telefon raqamingizni yozing" />
+              <input type="email" class="footer__input" required placeholder="Email manzilingizni yozing" />
+              <button type="submit" class="footer__btn">yuborish</button>
+            </form>
+          </div>
+          <div class="footer__line"></div>
+          <div class="footer__body">
+            <a href="#" class="footer__logo">
+              <img src="images/black-logo.png" alt="footer-logo" width="100" height="100" class="footer__brand" />
+              <div class="footer__text">
+                <h1 class="footer__logo-title">apex ta’lim</h1>
+              <p class="footer__logo-subtitle">Talaba bo‘lishingizga albatta ishonamiz</p>
+              </div>
+            </a>
+            <p class="footer__copyright">
+              &copy;2021. Apex ta’lim. Xizmatlar litsenziyalangan.
+            </p>
+          </div>
         </div>
       </footer>
+    </div>
+
+    <div id="modal" class="modal">
+      <span class="close">&times;</span>
+      <img id="img01" width="369" height="273" class="modal__img" />
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.0.9/dist/js/splide.min.js"
