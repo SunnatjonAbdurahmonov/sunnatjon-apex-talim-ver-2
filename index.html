@@ -78,7 +78,7 @@
                 Shaxmatda yo‘lga chiqqan piyoda, bir kun kelib albatta vazir
                 bo’ladi.
               </p>
-              <a href="#" class="btn">kursga yozilish</a>
+              <a href="#" class="btn course__btn">kursga yozilish</a>
             </div>
             <!--* Header img -->
             <div class="header__img">
@@ -387,7 +387,7 @@
             </div>
           </section>
           <section class="section section-results" id="natijalar">
-            <h1 class="section__head">o’quvhilarimizning natijalari</h1>
+            <h1 class="section__head">o’quvchilarimizning natijalari</h1>
             <div class="section__body">
               <div class="splide5 splide">
                 <div class="splide__track">
@@ -629,6 +629,29 @@
     <div id="modal" class="modal">
       <span class="close">&times;</span>
       <img id="img01" width="369" height="273" class="modal__img" />
+    </div>
+    <div class="course__popup-wrapper">
+      <div class="course__popup">
+        <div class="popup__header">
+          <div class="popup__logo">
+            <img src="./images/white-logo.png" alt="white-logo" width="100" height="100">
+            <h1 class="popup__logo-title">apex ta’lim</h1>
+
+            <button type="button" class="close__popup">
+              <span class="popup__btn-line"></span>
+              <span class="popup__btn-line"></span>
+            </button>
+          </div>
+        </div>
+        <div class="popup__main">
+          <h1 class="popup__main-title">Kursga yozilish</h1>
+          <form class="popup__form">
+            <input type="text" class="popup__input" name="popup-name" placeholder="Ism va familiyangizni yozing" autocomplete="off" required="">
+            <input type="number" class="popup__input" name="popup-num" placeholder="Telefon raqamingizni yozing" autocomplete="off" required="">
+            <button class="popup__btn" type="submit">kursga yozilish</button>
+          </form>
+        </div>
+      </div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.0.9/dist/js/splide.min.js"

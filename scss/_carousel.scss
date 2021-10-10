@@ -214,23 +214,16 @@ $white: #ffffff;
 }
 @media only screen and (max-width: 500px) {
   .splide__result-img {
-    
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
-}
+  }
 }
 
 @media (min-width: 350px) and (max-width: 373px) {
   .splide__result-img {
     top: -6px;
-  }
-}
-@media (min-width: 350px) and (max-width: 369px) {
-  .section__photo {
-    width: 100% !important;
-    height: auto !important;
   }
 }

@@ -126,6 +126,7 @@ $white: #ffffff;
     justify-content: center;
     @include mixins.card-desc();
     font-weight: 300;
+    padding: 20px 0;
   }
 }
 
@@ -208,7 +209,8 @@ $white: #ffffff;
   }
   .footer {
     &__container {
-      padding: 1rem;
+      padding: 1rem !important;
+      width: 100% !important;
     }
     &__form {
       display: inline-block;

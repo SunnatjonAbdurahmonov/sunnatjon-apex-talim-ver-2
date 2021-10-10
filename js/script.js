@@ -30,6 +30,21 @@ window.addEventListener("DOMContentLoaded", function () {
   }
   executeRating(ratingStars);
 
+  //* Popup
+
+  const courseBtn = document.querySelector(".course__btn");
+  const closeBtn = document.querySelector(".close__popup");
+  const popup = document.querySelector(".course__popup-wrapper");
+
+  courseBtn.addEventListener("click", () => {
+    popup.classList.add("show__popup");
+    html.classList.add("html__oveflow");
+  });
+  closeBtn.addEventListener("click", () => {
+    popup.classList.remove("show__popup");
+    html.classList.remove("html__oveflow");
+  });
+
   let modal = document.getElementById("modal");
   let i;
 
